@@ -197,16 +197,6 @@ security:
   output_limit: 10000
 ```
 
-## Future Roadmap
-
-- v1.3: Tool approval UI
-- v1.4: Advanced project indexing (AST, symbols)
-- v1.5: Semantic search
-- v1.6: Context compression
-- v1.7: Multi-agent architecture
-- v1.8: Self-review loop
-- v1.9: Git integration
-- v2.0: Universal Agent Runtime
 
 ## License
 
