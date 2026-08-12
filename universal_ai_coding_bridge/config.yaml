@@ -1,0 +1,49 @@
+# Universal AI Coding Bridge Configuration
+
+bridge:
+  host: "127.0.0.1"
+  port: 8765
+  
+sandbox:
+  root: "./sandbox"
+  
+security:
+  max_iterations: 20
+  timeout_seconds: 30
+  output_limit: 10000
+  allowed_commands:
+    - "python3"
+    - "python"
+    - "pytest"
+    - "git"
+    - "ls"
+    - "cat"
+    - "grep"
+    - "find"
+  blocked_commands:
+    - "rm -rf"
+    - "sudo"
+    - "chmod 777"
+    - "curl"
+    - "wget"
+    - "ssh"
+    - "nc"
+  blocked_paths:
+    - "/etc"
+    - "/home"
+    - "/root"
+    - "/var"
+    - "/usr"
+    - "/bin"
+    - "/sbin"
+    - "~/.ssh"
+    - "~/.aws"
+    - "~/.config"
+    
+logging:
+  level: "INFO"
+  file: "./logs/bridge.log"
+  
+session:
+  max_sessions: 10
+  cleanup_after_hours: 24
